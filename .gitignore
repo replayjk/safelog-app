@@ -1,0 +1,15 @@
+# 환경 변수 파일
+.env
+
+# Python 환경 파일
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# 프로젝트 파일
+uploads/
+cases/
+pdf_reports/

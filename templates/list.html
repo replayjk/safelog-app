@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>아차사고 사례 목록</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h1>아차사고 사례 목록</h1>
+    <ul>
+        {% for case in cases %}
+        <li>
+            <h3>{{ case[1] }}</h3>
+            <p>{{ case[2] }}</p>
+            <img src="{{ case[3] }}" alt="Case Image" style="max-width: 300px;">
+            <p>등록일시: {{ case[4] }}</p>
+            <hr>
+        </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/report">새 사례 등록</a>
+</body>
+</html>
