@@ -43,10 +43,8 @@ def generate_pdf(description, image_path, timestamp):
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.add_page()
 
-    # 폰트 설정
-    font_path = os.path.join("fonts", "NanumGothic.ttf")
-    pdf.add_font("NanumGothic", "", font_path, uni=True)
-    pdf.set_font("NanumGothic", size=12)
+    # 폰트 설정 (Nanum Gothic URL 사용)
+    pdf.set_font("Arial", size=12)
 
     # 문서 상단 제목
     pdf.set_font_size(24)
